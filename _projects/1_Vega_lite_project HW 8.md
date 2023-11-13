@@ -19,7 +19,7 @@ custom_js:
 
 
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/chart1example.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chart1.json" style="width: 100%"></vegachart>
 
 
 ###### This code displays a scatter plot using Altair, representing data from a building inventory. Each point in the scatter plot corresponds to a building and is positioned based on the year it was constructed (on the x-axis) and the total number of floors it has (on the y-axis). The color of each point represents the total number of floors as well light blue being low floors dark blue being high floors. The data can be filtered by county using a dropdown menu, and a brush selection allows for filtering based on a specific range of years and total floors. This plot could help understand how buildings have changed throughout time including floors and square footage. In the data we can see an increase of floors in more recent years. I put a dropdown menu to provide a choice for selecting a specific county. The chart is then filtered to display only the buildings from the selected county. This allows users to focus on specific regions and compare the distribution of buildings across different counties. The brush selection enables users to interactively choose a specific range of years and total floors. This can be useful for analyzing patterns or trends within a particular time period or range of total floors.
