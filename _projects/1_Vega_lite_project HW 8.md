@@ -1,7 +1,7 @@
 ---
 name: Building Inventory Dataset 
 tools: [Python, HTML, vega-lite]
-image: assets/pngs/visualization(1).png
+image: assets/pngs/Viz(1).png
 description: This is a "showcase" for my IS-445 course that uses vega-lite and Altair to solve HW 8
 custom_js:
   - vega.min
