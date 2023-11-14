@@ -2,7 +2,7 @@
 name: Building Inventory Dataset 
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/Viz(1).png
-description: This is a "showcase" for my IS-445 course that uses vega-lite and Altair to solve HW 8
+description: This is a project that shows the correlation of amount of crime, time of crime, and type of crime from 2011 to now
 custom_js:
   - vega.min
   - vega-lite.min
@@ -11,18 +11,21 @@ custom_js:
 ---
 
 
-# Building Inventory Dataset
+# Rockford Crime Dataset
 
 
 
-### Visualization 1: How total floors of buildings change over time depending on County 
+### Visualization 1: What time crimes happen and their type in Rockford, Illinois from 2011 to now
 
 
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/chart1.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/RockfordViz.json" style="width: 100%"></vegachart>
 
 
-###### This code displays a scatter plot using Altair, representing data from a building inventory. Each point in the scatter plot corresponds to a building and is positioned based on the year it was constructed (on the x-axis) and the total number of floors it has (on the y-axis). The color of each point represents the total number of floors as well light blue being low floors dark blue being high floors. The data can be filtered by county using a dropdown menu, and a brush selection allows for filtering based on a specific range of years and total floors. This plot could help understand how buildings have changed throughout time including floors and square footage. In the data we can see an increase of floors in more recent years. I put a dropdown menu to provide a choice for selecting a specific county. The chart is then filtered to display only the buildings from the selected county. This allows users to focus on specific regions and compare the distribution of buildings across different counties. The brush selection enables users to interactively choose a specific range of years and total floors. This can be useful for analyzing patterns or trends within a particular time period or range of total floors.
+### Dataset Information
+
+
+######  The name of the dataset is "City of Rockford Crime Offenses 2011-Present." I obtained this dataset from the data.illinois.gov website that is posted in the FP1.1. The data set can be found at this URL: "https://data.illinois.gov/dataset/116city_of_rockford_crime_offenses_2011present." While there was no explicit stating of license, in the about the dataset it says that the data is obtained form the NETRMS records management system and that the data should not be used comparative reporting. In the about data.illinois.gov section it says that "Illinous Open Data Portal lets you find data across state, find facts about your state, lets you create maps and graphs, and lets you freely download the data for your own analysis." The file is 22MB large, but github has up to 2 GB max file size for free. Seeing that the file is under the maximum file size I should be find hosting the data myself. 
 
 <div class="left">
 {% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv" text="The Data" %}
